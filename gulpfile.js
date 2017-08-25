@@ -102,7 +102,8 @@ gulp.task('develop', ['build'], function(){
                 // effectively means that http://localhost:3000/another-page shows another-page.html
                 extensions: ['html']
             }
-        }
+        },
+        open: false
     });
     gulp.watch('src/scss/**/*', ['css:compile']); // watch for changes in scss
     gulp.watch('src/templates/**/*', ['html:compile']); // watch for changes in templates
@@ -111,10 +112,10 @@ gulp.task('develop', ['build'], function(){
 
 // deployment to surge.sh
 gulp.task('deploy', ['build'], function(){
-	return surge({
-		project: 'dist',
-		domain: 'https://my-first-website.surge.sh'
-	})
+    return surge({
+        project: 'dist',
+        domain: 'https://generic-hipster-coffee.surge.sh'
+    })
 });
 
 // set develop as a default task (gulp runs this when you don't specify a task)
