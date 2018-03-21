@@ -4,10 +4,8 @@
     }
 }
 
-.navbar-nav {
-    .nav-link {
-        text-decoration: none;
-    }
+.navbar-nav .nav-link {
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -28,11 +26,9 @@ h1, h2, h3, h4, h5, h6,
     }
 }
 
-.ghc-coffee-list {
-    .card {
-        @include media-breakpoint-up(sm) {
-            min-width: 25rem;
-        }
+.ghc-coffee-list .card {
+    @include media-breakpoint-up(sm) {
+        min-width: 25rem;
     }
 }
 
